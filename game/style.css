@@ -1,0 +1,47 @@
+/* Gobble Dash: Turkey Escape — page chrome around the canvas. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1d2b53;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+#game {
+  display: block;
+  width: min(960px, 96vw);
+  height: auto;
+  border: 4px solid #e07b39;
+  border-radius: 12px;
+  background: #7ec8f7;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  touch-action: none;
+}
+
+.hint {
+  margin: 0;
+  color: #fff3d6;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.85;
+}
